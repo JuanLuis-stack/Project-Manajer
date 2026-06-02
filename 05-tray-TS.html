@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark-3-TS</title>
+    <link rel="stylesheet" href="05-tray-TS.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="web__container">
+        <button class="menu__btn" id="menuBtn"><i id="logo" class='bx bx-menu'></i></button>
+        <div class="menu__container" id="menuContainer"></div>
+            <section class="menu" id="menu">
+                <button class="new__proyect" id="newProyect"><i class='bx bx-folder-plus'></i> Nuevo Proyecto</button>
+                <h3>Proyectos</h3>
+                <ul class="proyect__almacen" id="proyectAlmacen">
+                    <!-- esqueleto de las opciones del proyecto-->
+                    <!-- <li><p>Programar</p>
+                        <button class="proyect__optionsBtn" id="ProyectOptionsBtn">
+                            <p>...</p>
+                        </button>
+                        <div class="optionsBtn__menu" id="optionsBtnMenu">
+                            <button>remove</button>
+                            <button>edit</button>
+                            <button>priority</button>
+                        </div>
+                    </li> -->
+                </ul>
+        </section>
+        <main id="main" >
+            <header class="main__header" id="header">
+                <div class="name__container" id="proyectTitle">
+                    <!-- <label for="">Nombre:</label>
+                    <input id="nameProyect" type="text" placeholder="Escribe el nombre de tu nuevo proyecto..."> -->
+                </div>
+                <div class="obj__container" id="objContainer">
+                    <!-- <label for="Empy">Objetivo:</label>
+                    <textarea name="obj" id="objProyect" placeholder="Escribe el objetivo de nuevo proyecto"></textarea> -->
+                </div>
+                <!-- <button class="save__proyect" id="saveProyect">Save</button> -->
+            </header>
+            <div class="container__task">
+                <header class="tasks__header">
+                    <h2>Contenedor de tareas</h2>
+                    <button class="create__btn" id="createBtn">Crear tarea</button>
+                </header>
+                <ul class="ul__task" id="tasksAlmacen">
+                    <!-- <li><p>trabajar</p>
+                        <button class="options__TaskBtn" id="optionsTaskBtn">
+                            <p>...</p>
+                        </button>
+                        <div class="optionsTask__menu" id="optionsTaskMenu">
+                            <button>remove</button>
+                            <button>edit</button>
+                            <button>priority</button>
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+            <div class="vasio__container" id="empty">
+                <p class="vasio" id="vasio">Con que vamos a trabajar hoy?</p>
+            </div>
+        </main>
+    </div>    
+    <script type="module" src="./ControllerTS/05-Controller.js"></script>
+</body>
+</html>
